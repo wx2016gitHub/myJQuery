@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Demo JQuery</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        body {  background-image: -webkit-radial-gradient(circle, gold, white );
+                background-image: radial-gradient(circle, gold, white );
+             }
+    </style>
+</head>
+<body>
+    <h1 style="color:darkgreen;text-align:center"><strong>My JQuery Demo Program</strong></h1>
+    <br />
+    <div style="margin-left:60px">
+            <img src="./source/image001.gif" style="vertical-align:middle"/>
+            <a style="margin-left:60px" href="./source/myBank.html">Go to My Bank Demo Program</a>
+    </div>
+    <br />
+    <br />
+    <div style="margin-left:60px;color:darkgreen; font-size:large" id="design">
+         <img src="./source/image002.gif" style="vertical-align:top;padding-right:60px " />
+         <strong>About this Demo Design</strong>
+    </div>
+    <p style="position:relative; left:420px;bottom:150px; max-width:35%; max-height:160px;color:darkslategray;font-size:15px; overflow:hidden">I used a simple Bank system to demo my jQuery program. I used a pre-definiation jason array in memory as the data should be from a Database system. The ID field is only 11, 22, 33, 44, 55 available for this demo application. There are other demos that also can demostrate my jQuery skill. This demo program needs to connecte network for using jQuery and bootstrap library.</p>
+    <script>
+        jQuery.noConflict();
+        jQuery(document).ready(function ($) {
+            $("p").show();
+            $("#design").hover(function () {
+               $("p").toggle();
+            });
+            $("img:eq(0)").click(function () { $("h1").animate({ fontSize: "3em", }, 1500); }); 
+            $("img:eq(1)").click(function () { $("h1").animate({ fontSize: "2em", }, 1500); });
+     });
+    </script>
+</body>
+</html>
+<!-- @copyright Wendy Xiao test jQery code 5/2/2016 -->

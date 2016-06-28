@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myExample">
+<head>
+    <title>my jQery test</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="myJQuery.js"></script>
+    <style>
+        body {  background-image: -webkit-radial-gradient(circle, gold, white );
+                background-image: radial-gradient(circle, gold, white );
+                padding-left:100px; padding-right:100px; color:darkgreen;
+             }
+    </style>
+</head>
+<body>
+    <br>
+    <h2 class="text-center"><strong>My Simple Bank System</strong></h2>
+    <br>
+    <div class="row">
+        <div class="col-sm-5 col-sm-push-1">
+            <img src="image001.gif" />
+        </div>
+        <div class="hidden-xs col-sm-5 col-sm-push-1">
+            <img src="image002.gif" />
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn btn-primary btn-large btn-block">
+                <span class="glyphicon glyphicon-circle-arrow-up">Withdrawal</span>
+            </button>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn btn-primary btn-large btn-block">
+                <span class="glyphicon glyphicon-circle-arrow-down">Deposit</span>
+            </button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn btn-primary btn-large btn-block">
+                <span class="glyphicon glyphicon-transfer">Transfer</span>
+            </button>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn btn-primary btn-large btn-block">
+                <span class="glyphicon glyphicon-print">Statement</span>
+            </button>
+        </div>
+    </div>
+    <hr />
+    <a href="../mainPage.html">Go to Main Page</a>
+    <div class="form-horizontal" id="form0">
+        <div class="form-group">
+            <label class="col-sm-3 control-label col-sm-push-2">Account number</label>
+            <div class="col-sm-2 col-sm-push-2"><input type="number" min="11" max="99" step="1" id="withdrawalID" /></div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label col-sm-push-2">Withdrawal Amount</label>
+            <div class="col-sm-2 col-sm-push-2"><input type="number" min="0.01" max="5000000.00" id="withdrawalInput" /></div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success col-sm-2 col-sm-offset-3  " id="cfmWithdrawal">Confirm </button>
+            <button class="btn btn-success col-sm-1 col-sm-offset-1  ">Exit</button>
+        </div>
+    </div>
+    <div class="form-horizontal" id="form1">
+        <div class="form-group">
+            <label class="col-sm-3 control-label col-sm-push-2">Account number</label>
+            <div class="col-sm-2 col-sm-push-2"><input type="number" min="11" max="99" step="1" id="depositID" /></div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label col-sm-push-2">Deposit Amount</label>
+            <div class="col-sm-2 col-sm-push-2"><input type="number" min="0.01" max="5000000.00" id="depositInput" /></div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success col-sm-2 col-sm-offset-3" id="cfmDeposit">Confirm </button>
+            <button class="btn btn-success col-sm-1 col-sm-offset-1">Exit</button>
+        </div>
+    </div>
+    <div class="form-horizontal" id="form2">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Current Account number</label>
+            <div class="col-sm-2"><input type="number" min="11" max="99" step="1" id="accountID" /></div>
+            <label class="col-sm-3 col-sm-offset-1 control-label">Transfer Account Number</label>
+            <div class="col-sm-2"><input type="number" min="11" max="99" step="1" id="transferID" /></div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Transfer Amount</label>
+            <input class="col-sm-2" type="number" min="0.01" max="5000000.00" id="transferInput" />
+            <button class="btn btn-success col-sm-2 col-sm-offset-1 " id="cfmTransfer">Confirm </button>
+            <button class="btn btn-success col-sm-1 col-sm-offset-1">Exit</button>
+        </div>
+    </div>
+    <div class="form-horizontal" id="form3">
+        <div class="form-group">
+            <label class="col-sm-3 control-label col-sm-push-2">Account number</label>
+            <div class="col-sm-2 col-sm-push-2"><input type="number" min="11" max="99" step="1" id="statementID" /></div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success col-sm-2 col-sm-offset-3" id="cfmStatement">Confirm </button>
+            <button class="btn btn-success col-sm-1 col-sm-offset-1">Exit</button>
+        </div>
+    </div>
+    <p></p>
+</body>
+</html>
+<!-- @copyright Wendy Xiao test jQery code 5/2/2016 -->
